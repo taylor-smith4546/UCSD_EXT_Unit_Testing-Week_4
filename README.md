@@ -10,26 +10,12 @@ Quiz #4 (Blackboard)
 
 Exercise #1:
 
-User Service Tested
+Line-Counting Program
 
-Write a happy-path test for the class presented below. Verify that the user gets his new password, and
-that the updateUser() method of userDAO is called.
+Write a JUnit test to count for the number of lines in a file that is read by a program.
+LineCount.java and LineCountTest.java have been provided to assist in writing the test.
 
-```java
-public class UserServiceImpl {
- private UserDAO userDAO;
- private SecurityService securityService;
- public void assignPassword(User user) throws Exception {
- String passwordMd5 = securityService.md5(user.getPassword());
- user.setPassword(passwordMd5);
- userDAO.updateUser(user);
- }
- public UserServiceImpl(UserDAO dao, SecurityService security) {
- this.userDAO = dao;
- this.securityService = security;
- }
-}
-```
+
 
 ## Topics Covered: 
 
